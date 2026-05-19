@@ -98,3 +98,37 @@
      box-shadow: 0 0 12px rgba(102, 186, 255, 0.808);
      border: none;
  }
+
+
+ .fjltech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px 30px;
+  
+ }
+
+ h1 {
+    color:  white;
+    margin: 0;
+ }
+
+ li {
+    color: greenyellow;
+ 
+ }
+
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+     background-color: #000000;   
+ }
+
+ img {
+    width: 40px;
+ }
+ 
