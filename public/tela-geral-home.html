@@ -6,131 +6,96 @@
     <link rel="stylesheet" href="../assets/style/style.css">
 </head>
 <body id="home-corpo">
-    <div class="estrutura-dashboard">
-        <header class="barra-superior">
-            <h1>FJL Tech</h1>
+    <header class="barra-superior">
+        <h1>FJL Tech</h1>
 
-            <div class="acoes-superiores">
-                <span class="ponto-online"></span>
-                <span class="texto-online">Online</span>
-                <span class="icone-sino" aria-label="Notificações"></span>
-                <span class="icone-usuario" aria-label="Usuário"></span>
-            </div>
-        </header>
+        <div class="acoes-superiores">
+            <span class="ponto-online"></span>
+            <span class="texto-online">Online</span>
+            <span class="icone-sino"></span>
+            <span class="icone-usuario"></span>
+        </div>
+    </header>
 
-        <aside class="menu-lateral">
-            <nav>
-                <a class="ativo" href="#">Dashboard</a>
-                <a href="#">Sensores</a>
-                <a href="#">Alertas</a>
-                <a href="#">Relatórios</a>
-                <a href="#">Configurações</a>
-            </nav>
-        </aside>
+    <aside class="menu-lateral">
+        <nav>
+            <a class="ativo" href="#">Dashboard</a>
+            <a href="#">Sensores</a>
+            <a href="#">Alertas</a>
+            <a href="#">Relat&oacute;rios</a>
+            <a href="#">Configura&ccedil;&otilde;es</a>
+        </nav>
+    </aside>
 
-        <main class="conteudo">
-            <section class="painel-principal">
-                <h2>Dashboard</h2>
+    <main class="conteudo">
+    <section class="painel-principal">
+        <h2>Dashboard</h2>
 
-                <div class="metricas">
-                    <article class="cartao-metrica">
-                        <h3>Status do trem</h3>
-                        <div class="linha-metrica">
-                            <strong class="verde">ATIVO</strong>
-                            <span class="icone-check"></span>
-                        </div>
-                    </article>
-
-                    <article class="cartao-metrica">
-                        <h3>Velocidade</h3>
-                        <div class="linha-metrica">
-                            <strong class="ciano">80<span>Km/h</span></strong>
-                            <span class="icone-velocidade"></span>
-                        </div>
-                    </article>
-
-                    <article class="cartao-metrica">
-                        <h3>Temperatura</h3>
-                        <div class="linha-metrica">
-                            <strong class="vermelho">75°C</strong>
-                            <span class="termometro"></span>
-                        </div>
-                    </article>
-
-                    <article class="cartao-metrica">
-                        <h3>Vibração</h3>
-                        <div class="linha-metrica">
-                            <strong class="verde">Normal</strong>
-                            <span class="linha-vibracao"></span>
-                        </div>
-                    </article>
+        <div class="metricas">
+            <article class="cartao-metrica">
+                <h3>Status do trem</h3>
+                <div class="linha-metrica">
+                    <strong class="verde">ATIVO</strong>
+                    <span class="icone-check"></span>
                 </div>
+            </article>
 
-                <div class="grade-dashboard">
-                    <section class="cartao-grafico">
-                        <div class="legenda">
-                            <span class="ponto-legenda fundo-vermelho"></span>
-                            <span class="ponto-legenda fundo-ciano"></span>
-                            <span class="ponto-legenda fundo-verde"></span>
-                        </div>
-
-                        <svg viewBox="0 0 690 170">
-                            <path class="linha-grafico linha-ciano" d="M110 95 C165 72, 190 62, 250 82 S350 74, 410 64 S505 96, 620 62"></path>
-                            <path class="linha-grafico linha-vermelha" d="M110 116 C175 108, 190 110, 250 114 S345 107, 410 106 S500 114, 620 108"></path>
-                            <path class="linha-grafico linha-verde" d="M110 138 C170 137, 210 139, 250 138 S350 132, 410 133 S510 140, 620 136"></path>
-
-                            <g class="pontos-ciano">
-                                <circle cx="110" cy="95" r="6"></circle>
-                                <circle cx="210" cy="68" r="6"></circle>
-                                <circle cx="315" cy="88" r="6"></circle>
-                                <circle cx="420" cy="64" r="6"></circle>
-                                <circle cx="525" cy="84" r="6"></circle>
-                                <circle cx="620" cy="62" r="6"></circle>
-                            </g>
-
-                            <g class="pontos-vermelhos">
-                                <circle cx="110" cy="116" r="6"></circle>
-                                <circle cx="210" cy="111" r="6"></circle>
-                                <circle cx="315" cy="114" r="6"></circle>
-                                <circle cx="420" cy="106" r="6"></circle>
-                                <circle cx="525" cy="111" r="6"></circle>
-                                <circle cx="620" cy="108" r="6"></circle>
-                            </g>
-
-                            <g class="pontos-verdes">
-                                <circle cx="110" cy="138" r="6"></circle>
-                                <circle cx="210" cy="138" r="6"></circle>
-                                <circle cx="315" cy="138" r="6"></circle>
-                                <circle cx="420" cy="133" r="6"></circle>
-                                <circle cx="525" cy="138" r="6"></circle>
-                                <circle cx="620" cy="136" r="6"></circle>
-                            </g>
-                        </svg>
-                    </section>
-
-                    <section class="cartao-eventos">
-                        <h3>Eventos Recentes</h3>
-
-                        <ul>
-                            <li><span class="icone-evento alerta"></span><strong>Vibração Alta Detectada</strong><time>10:20</time></li>
-                            <li><span class="icone-evento alerta"></span><strong>Temperatura Elevada</strong><time>10:18</time></li>
-                            <li><span class="icone-evento atencao"></span><strong>Queda de sinal</strong><time>10:25</time></li>
-                            <li><span class="icone-evento informacao"></span><strong>Sistema normalizado</strong><time>10:25</time></li>
-                            <li><span class="icone-evento informacao"></span><strong>Trem em operação</strong><time>10:31</time></li>
-                        </ul>
-                    </section>
-
-                    <section class="cartao-mapa">
-                        <div class="texto-mapa texto-mapa-a">Av. Norte</div>
-                        <div class="texto-mapa texto-mapa-b">Linha Azul</div>
-                        <div class="texto-mapa texto-mapa-c">Setor Central</div>
-                        <div class="rota rota-principal"></div>
-                        <div class="rota rota-secundaria"></div>
-                        <span class="marcador"></span>
-                    </section>
+            <article class="cartao-metrica">
+                <h3>Velocidade</h3>
+                <div class="linha-metrica">
+                    <strong class="ciano">80<span>Km/h</span></strong>
+                    <span class="icone-velocidade"></span>
                 </div>
+            </article>
+
+            <article class="cartao-metrica">
+                <h3>Temperatura</h3>
+                <div class="linha-metrica">
+                    <strong class="vermelho">75&deg;C</strong>
+                    <span class="termometro"></span>
+                </div>
+            </article>
+
+            <article class="cartao-metrica">
+                <h3>Vibra&ccedil;&atilde;o</h3>
+                <div class="linha-metrica">
+                    <strong class="verde">Normal</strong>
+                    <span class="linha-vibracao"></span>
+                </div>
+            </article>
+        </div>
+
+        <div class="grade-dashboard">
+            <section class="cartao-grafico">
+                <canvas id="grafico-sensores"></canvas>
             </section>
-        </main>
-    </div>
+
+            <section class="cartao-eventos">
+                <h3>Eventos Recentes</h3>
+
+                <ul>
+                    <li><span class="icone-evento alerta"></span><strong>Vibra&ccedil;&atilde;o Alta Detectada</strong><time>10:20</time></li>
+                    <li><span class="icone-evento alerta"></span><strong>Temperatura Elevada</strong><time>10:18</time></li>
+                    <li><span class="icone-evento atencao"></span><strong>Queda de sinal</strong><time>10:25</time></li>
+                    <li><span class="icone-evento informacao"></span><strong>Sistema normalizado</strong><time>10:25</time></li>
+                    <li><span class="icone-evento informacao"></span><strong>Trem em opera&ccedil;&atilde;o</strong><time>10:31</time></li>
+                </ul>
+            </section>
+
+            <section class="cartao-mapa">
+                <iframe
+                    src="https://www.google.com/maps?q=S%C3%A3o%20Paulo&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border: 0;"
+                    loading="lazy">
+                </iframe>
+            </section>
+        </div>
+    </section>
+</main>
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="../script/grafico.js"></script>  
 </body>
 </html>
