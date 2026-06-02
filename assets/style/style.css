@@ -638,3 +638,11 @@ body {
         margin-bottom: 28px;
     }
 }
+
+# {
+    min-height: 100vh;
+    background-image: url("../img/fundo_certo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
