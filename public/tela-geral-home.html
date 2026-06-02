@@ -1,35 +1,123 @@
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela geral</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FJL Tech Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="fjltech">
-          
-            <h1>FJL Tech</h1>
-  <nav>
-           
-          <li>Online</li>
-
-            <div class="img">
-            <img src="assets/img sino.png" alt="sino">
-            <img src="assets/bonequinho.png" alt="bonequinho">
-            </div>
-        
-        </div>
-        </nav>
+  <div class="dashboard-shell">
+    <header class="topbar">
+      <h1>FJL Tech</h1>
+      <div class="top-actions">
+        <span class="online-dot"></span>
+        <span class="online-text">Online</span>
+        <span class="bell" aria-label="Notificacoes"></span>
+        <span class="user-icon" aria-label="Usuario"></span>
+      </div>
     </header>
-    <main>
 
+    <aside class="sidebar">
+      <nav>
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">Sensores</a>
+        <a href="#">Alertas</a>
+        <a href="#">Relatórios</a>
+        <a href="#">Configurações</a>
+      </nav>
+    </aside>
 
+    <main class="content">
+      <section class="hero-panel" aria-label="Dashboard do trem">
+        <h2>Dashboard</h2>
 
+        <div class="metrics">
+          <article class="metric-card">
+            <h3>Status do trem</h3>
+            <div class="metric-row">
+              <strong class="green">ATIVO</strong>
+              <span class="check-icon"></span>
+            </div>
+          </article>
+
+          <article class="metric-card speed-card">
+            <h3>Velocidade</h3>
+            <div class="metric-row">
+              <strong class="cyan">80<span>Km/h</span></strong>
+              <span class="speed-icon"></span>
+            </div>
+          </article>
+
+          <article class="metric-card temperature-card">
+            <h3>Temperatura</h3>
+            <div class="metric-row">
+              <strong class="red">75°C</strong>
+              <span class="thermometer"></span>
+            </div>
+          </article>
+
+          <article class="metric-card vibration-card">
+            <h3>Vibração</h3>
+            <div class="metric-row">
+              <strong class="green">Normal</strong>
+              <span class="sparkline"></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="chart-card" aria-label="Historico de sensores">
+            <div class="legend">
+              <span class="legend-dot red-bg"></span>
+              <span class="legend-dot cyan-bg"></span>
+              <span class="legend-dot green-bg"></span>
+            </div>
+            <svg viewBox="0 0 690 170" role="img" aria-label="Grafico de linhas dos sensores">
+              <path class="line cyan-line" d="M110 95 C165 72, 190 62, 250 82 S350 74, 410 64 S505 96, 620 62"></path>
+              <path class="line red-line" d="M110 116 C175 108, 190 110, 250 114 S345 107, 410 106 S500 114, 620 108"></path>
+              <path class="line green-line" d="M110 138 C170 137, 210 139, 250 138 S350 132, 410 133 S510 140, 620 136"></path>
+              <g class="points cyan-points">
+                <circle cx="110" cy="95" r="6"></circle><circle cx="210" cy="68" r="6"></circle>
+                <circle cx="315" cy="88" r="6"></circle><circle cx="420" cy="64" r="6"></circle>
+                <circle cx="525" cy="84" r="6"></circle><circle cx="620" cy="62" r="6"></circle>
+              </g>
+              <g class="points red-points">
+                <circle cx="110" cy="116" r="6"></circle><circle cx="210" cy="111" r="6"></circle>
+                <circle cx="315" cy="114" r="6"></circle><circle cx="420" cy="106" r="6"></circle>
+                <circle cx="525" cy="111" r="6"></circle><circle cx="620" cy="108" r="6"></circle>
+              </g>
+              <g class="points green-points">
+                <circle cx="110" cy="138" r="6"></circle><circle cx="210" cy="138" r="6"></circle>
+                <circle cx="315" cy="138" r="6"></circle><circle cx="420" cy="133" r="6"></circle>
+                <circle cx="525" cy="138" r="6"></circle><circle cx="620" cy="136" r="6"></circle>
+              </g>
+            </svg>
+          </section>
+
+          <section class="events-card" aria-label="Eventos recentes">
+            <h3>Eventos Recentes</h3>
+            <ul>
+              <li><span class="event-icon warning"></span><strong>Vibração Alta Detectada</strong><time>10:20</time></li>
+              <li><span class="event-icon warning"></span><strong>Temperatura Elevada</strong><time>10:18</time></li>
+              <li><span class="event-icon caution"></span><strong>Queda de sinal</strong><time>10:25</time></li>
+              <li><span class="event-icon info"></span><strong>Sistema normalizado</strong><time>10:25</time></li>
+              <li><span class="event-icon info"></span><strong>Trem em operação</strong><time>10:31</time></li>
+            </ul>
+          </section>
+
+          <section class="map-card" aria-label="Mapa da rota">
+            <div class="map-label a">Av. Norte</div>
+            <div class="map-label b">Linha Azul</div>
+            <div class="map-label c">Setor Central</div>
+            <div class="route route-main"></div>
+            <div class="route route-side"></div>
+            <span class="pin"></span>
+          </section>
+        </div>
+      </section>
     </main>
-    <footer>
-
-
-    </footer>
+  </div>
 </body>
 </html>
