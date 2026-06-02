@@ -639,10 +639,159 @@ body {
     }
 }
 
-# {
-    min-height: 100vh;
-    background-image: url("../img/fundo_certo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+.area-principal{
+    margin-left:200px;
+    padding:30px;
+    min-height:100vh;
+    background-image:url("../img/fundo_certo.png");
+    background-size:cover;
+    background-position:center;
+}
+
+.cabecalho-cadastro-sensor{
+    margin-bottom:25px;
+}
+
+.titulo-pagina{
+    color:white;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.descricao-pagina{
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+.botao-voltar-sensores{
+    background:#111;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.painel-cadastro-sensor{
+    background:rgba(10,10,10,.95);
+    border-radius:15px;
+    padding:30px;
+    color:white;
+}
+
+.nome-sensor,
+.tipo-sensor,
+.id-sensor,
+.localizacao-sensor,
+.unidade-medida,
+.limite-alerta,
+.status-sensor,
+.descricao-sensor{
+    display:block;
+    color:white;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    background:#2f2f2f;
+    color:white;
+    border:1px solid #444;
+    border-radius:8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border:1px solid #4b6fff;
+}
+
+.grupo-nome-sensor{
+    margin-bottom:20px;
+}
+
+.grupo-tipo-sensor,
+.grupo-id-sensor{
+    width:49%;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom:20px;
+}
+
+.grupo-id-sensor{
+    margin-left:1%;
+}
+
+.grupo-localizacao-sensor,
+.grupo-unidade-medida,
+.grupo-limite-alerta{
+    width:32%;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom:20px;
+}
+
+.grupo-unidade-medida,
+.grupo-limite-alerta{
+    margin-left:1%;
+}
+
+.linha-status-e-descricao{
+    display:flex;
+    gap:40px;
+    margin-top:20px;
+}
+
+.grupo-status-sensor{
+    width:220px;
+}
+
+.opcoes-status-sensor{
+    margin-top:15px;
+}
+
+.opcao-status-ativo,
+.opcao-status-inativo{
+    display:block;
+    margin-bottom:15px;
+}
+
+.grupo-descricao-sensor{
+    flex:1;
+}
+
+.textarea-descricao-sensor{
+    height:180px;
+    resize:none;
+}
+
+.area-botoes-formulario{
+    margin-top:25px;
+}
+
+.botao-salvar-sensor{
+    background:linear-gradient(90deg,#4b6fff,#ff4db8);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.botao-cancelar-cadastro{
+    background:#444;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
 }
