@@ -1,123 +1,136 @@
-
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FJL Tech Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FJL Tech</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
 </head>
-<body>
-  <div class="dashboard-shell">
-    <header class="topbar">
-      <h1>FJL Tech</h1>
-      <div class="top-actions">
-        <span class="online-dot"></span>
-        <span class="online-text">Online</span>
-        <span class="bell" aria-label="Notificacoes"></span>
-        <span class="user-icon" aria-label="Usuario"></span>
-      </div>
-    </header>
+<body id="home-corpo">
+    <div class="estrutura-dashboard">
+        <header class="barra-superior">
+            <h1>FJL Tech</h1>
 
-    <aside class="sidebar">
-      <nav>
-        <a class="active" href="#">Dashboard</a>
-        <a href="#">Sensores</a>
-        <a href="#">Alertas</a>
-        <a href="#">Relatórios</a>
-        <a href="#">Configurações</a>
-      </nav>
-    </aside>
-
-    <main class="content">
-      <section class="hero-panel" aria-label="Dashboard do trem">
-        <h2>Dashboard</h2>
-
-        <div class="metrics">
-          <article class="metric-card">
-            <h3>Status do trem</h3>
-            <div class="metric-row">
-              <strong class="green">ATIVO</strong>
-              <span class="check-icon"></span>
+            <div class="acoes-superiores">
+                <span class="ponto-online"></span>
+                <span class="texto-online">Online</span>
+                <span class="icone-sino" aria-label="Notificações"></span>
+                <span class="icone-usuario" aria-label="Usuário"></span>
             </div>
-          </article>
+        </header>
 
-          <article class="metric-card speed-card">
-            <h3>Velocidade</h3>
-            <div class="metric-row">
-              <strong class="cyan">80<span>Km/h</span></strong>
-              <span class="speed-icon"></span>
-            </div>
-          </article>
+        <aside class="menu-lateral">
+            <nav>
+                <a class="ativo" href="#">Dashboard</a>
+                <a href="#">Sensores</a>
+                <a href="#">Alertas</a>
+                <a href="#">Relatórios</a>
+                <a href="#">Configurações</a>
+            </nav>
+        </aside>
 
-          <article class="metric-card temperature-card">
-            <h3>Temperatura</h3>
-            <div class="metric-row">
-              <strong class="red">75°C</strong>
-              <span class="thermometer"></span>
-            </div>
-          </article>
+        <main class="conteudo">
+            <section class="painel-principal">
+                <h2>Dashboard</h2>
 
-          <article class="metric-card vibration-card">
-            <h3>Vibração</h3>
-            <div class="metric-row">
-              <strong class="green">Normal</strong>
-              <span class="sparkline"></span>
-            </div>
-          </article>
-        </div>
+                <div class="metricas">
+                    <article class="cartao-metrica">
+                        <h3>Status do trem</h3>
+                        <div class="linha-metrica">
+                            <strong class="verde">ATIVO</strong>
+                            <span class="icone-check"></span>
+                        </div>
+                    </article>
 
-        <div class="dashboard-grid">
-          <section class="chart-card" aria-label="Historico de sensores">
-            <div class="legend">
-              <span class="legend-dot red-bg"></span>
-              <span class="legend-dot cyan-bg"></span>
-              <span class="legend-dot green-bg"></span>
-            </div>
-            <svg viewBox="0 0 690 170" role="img" aria-label="Grafico de linhas dos sensores">
-              <path class="line cyan-line" d="M110 95 C165 72, 190 62, 250 82 S350 74, 410 64 S505 96, 620 62"></path>
-              <path class="line red-line" d="M110 116 C175 108, 190 110, 250 114 S345 107, 410 106 S500 114, 620 108"></path>
-              <path class="line green-line" d="M110 138 C170 137, 210 139, 250 138 S350 132, 410 133 S510 140, 620 136"></path>
-              <g class="points cyan-points">
-                <circle cx="110" cy="95" r="6"></circle><circle cx="210" cy="68" r="6"></circle>
-                <circle cx="315" cy="88" r="6"></circle><circle cx="420" cy="64" r="6"></circle>
-                <circle cx="525" cy="84" r="6"></circle><circle cx="620" cy="62" r="6"></circle>
-              </g>
-              <g class="points red-points">
-                <circle cx="110" cy="116" r="6"></circle><circle cx="210" cy="111" r="6"></circle>
-                <circle cx="315" cy="114" r="6"></circle><circle cx="420" cy="106" r="6"></circle>
-                <circle cx="525" cy="111" r="6"></circle><circle cx="620" cy="108" r="6"></circle>
-              </g>
-              <g class="points green-points">
-                <circle cx="110" cy="138" r="6"></circle><circle cx="210" cy="138" r="6"></circle>
-                <circle cx="315" cy="138" r="6"></circle><circle cx="420" cy="133" r="6"></circle>
-                <circle cx="525" cy="138" r="6"></circle><circle cx="620" cy="136" r="6"></circle>
-              </g>
-            </svg>
-          </section>
+                    <article class="cartao-metrica">
+                        <h3>Velocidade</h3>
+                        <div class="linha-metrica">
+                            <strong class="ciano">80<span>Km/h</span></strong>
+                            <span class="icone-velocidade"></span>
+                        </div>
+                    </article>
 
-          <section class="events-card" aria-label="Eventos recentes">
-            <h3>Eventos Recentes</h3>
-            <ul>
-              <li><span class="event-icon warning"></span><strong>Vibração Alta Detectada</strong><time>10:20</time></li>
-              <li><span class="event-icon warning"></span><strong>Temperatura Elevada</strong><time>10:18</time></li>
-              <li><span class="event-icon caution"></span><strong>Queda de sinal</strong><time>10:25</time></li>
-              <li><span class="event-icon info"></span><strong>Sistema normalizado</strong><time>10:25</time></li>
-              <li><span class="event-icon info"></span><strong>Trem em operação</strong><time>10:31</time></li>
-            </ul>
-          </section>
+                    <article class="cartao-metrica">
+                        <h3>Temperatura</h3>
+                        <div class="linha-metrica">
+                            <strong class="vermelho">75°C</strong>
+                            <span class="termometro"></span>
+                        </div>
+                    </article>
 
-          <section class="map-card" aria-label="Mapa da rota">
-            <div class="map-label a">Av. Norte</div>
-            <div class="map-label b">Linha Azul</div>
-            <div class="map-label c">Setor Central</div>
-            <div class="route route-main"></div>
-            <div class="route route-side"></div>
-            <span class="pin"></span>
-          </section>
-        </div>
-      </section>
-    </main>
-  </div>
+                    <article class="cartao-metrica">
+                        <h3>Vibração</h3>
+                        <div class="linha-metrica">
+                            <strong class="verde">Normal</strong>
+                            <span class="linha-vibracao"></span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="grade-dashboard">
+                    <section class="cartao-grafico">
+                        <div class="legenda">
+                            <span class="ponto-legenda fundo-vermelho"></span>
+                            <span class="ponto-legenda fundo-ciano"></span>
+                            <span class="ponto-legenda fundo-verde"></span>
+                        </div>
+
+                        <svg viewBox="0 0 690 170">
+                            <path class="linha-grafico linha-ciano" d="M110 95 C165 72, 190 62, 250 82 S350 74, 410 64 S505 96, 620 62"></path>
+                            <path class="linha-grafico linha-vermelha" d="M110 116 C175 108, 190 110, 250 114 S345 107, 410 106 S500 114, 620 108"></path>
+                            <path class="linha-grafico linha-verde" d="M110 138 C170 137, 210 139, 250 138 S350 132, 410 133 S510 140, 620 136"></path>
+
+                            <g class="pontos-ciano">
+                                <circle cx="110" cy="95" r="6"></circle>
+                                <circle cx="210" cy="68" r="6"></circle>
+                                <circle cx="315" cy="88" r="6"></circle>
+                                <circle cx="420" cy="64" r="6"></circle>
+                                <circle cx="525" cy="84" r="6"></circle>
+                                <circle cx="620" cy="62" r="6"></circle>
+                            </g>
+
+                            <g class="pontos-vermelhos">
+                                <circle cx="110" cy="116" r="6"></circle>
+                                <circle cx="210" cy="111" r="6"></circle>
+                                <circle cx="315" cy="114" r="6"></circle>
+                                <circle cx="420" cy="106" r="6"></circle>
+                                <circle cx="525" cy="111" r="6"></circle>
+                                <circle cx="620" cy="108" r="6"></circle>
+                            </g>
+
+                            <g class="pontos-verdes">
+                                <circle cx="110" cy="138" r="6"></circle>
+                                <circle cx="210" cy="138" r="6"></circle>
+                                <circle cx="315" cy="138" r="6"></circle>
+                                <circle cx="420" cy="133" r="6"></circle>
+                                <circle cx="525" cy="138" r="6"></circle>
+                                <circle cx="620" cy="136" r="6"></circle>
+                            </g>
+                        </svg>
+                    </section>
+
+                    <section class="cartao-eventos">
+                        <h3>Eventos Recentes</h3>
+
+                        <ul>
+                            <li><span class="icone-evento alerta"></span><strong>Vibração Alta Detectada</strong><time>10:20</time></li>
+                            <li><span class="icone-evento alerta"></span><strong>Temperatura Elevada</strong><time>10:18</time></li>
+                            <li><span class="icone-evento atencao"></span><strong>Queda de sinal</strong><time>10:25</time></li>
+                            <li><span class="icone-evento informacao"></span><strong>Sistema normalizado</strong><time>10:25</time></li>
+                            <li><span class="icone-evento informacao"></span><strong>Trem em operação</strong><time>10:31</time></li>
+                        </ul>
+                    </section>
+
+                    <section class="cartao-mapa">
+                        <div class="texto-mapa texto-mapa-a">Av. Norte</div>
+                        <div class="texto-mapa texto-mapa-b">Linha Azul</div>
+                        <div class="texto-mapa texto-mapa-c">Setor Central</div>
+                        <div class="rota rota-principal"></div>
+                        <div class="rota rota-secundaria"></div>
+                        <span class="marcador"></span>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
